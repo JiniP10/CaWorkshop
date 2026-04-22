@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CaWorkshop.Domain.Common;
+using CaWorkshop.Domain.Kanban.Repositories;
 using CaWorkshop.Infrastructure.Persistence;
+using CaWorkshop.Infrastructure.Persistence.Repositories;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +22,8 @@ public static class DependencyInjection
                 sqliteOptions.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)));
 
         services.AddScoped<IAppDbContextInitializer, AppDbContextInitializer>();
+        services.AddScoped<IBoardRepository, BoardRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;
     }
