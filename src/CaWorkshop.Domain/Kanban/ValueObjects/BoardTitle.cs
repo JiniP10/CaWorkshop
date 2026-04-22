@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+using Ardalis.GuardClauses;
+
 using CaWorkshop.Domain.Common;
+using CaWorkshop.Domain.Kanban.Guards;
 
 namespace CaWorkshop.Domain.Kanban.ValueObjects;
 
