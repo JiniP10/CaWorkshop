@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CaWorkshop.Application/CaWorkshop.Application.csproj" />
+    <Project Path="src/CaWorkshop.Domain/CaWorkshop.Domain.csproj" />
+    <Project Path="src/CaWorkshop.Infrastructure/CaWorkshop.Infrastructure.csproj" />
+    <Project Path="src/CaWorkshop.WebApi/CaWorkshop.WebApi.csproj" />
+  </Folder>
+</Solution>

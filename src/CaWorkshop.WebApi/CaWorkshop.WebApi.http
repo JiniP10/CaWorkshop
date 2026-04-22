@@ -1,0 +1,6 @@
+@CaWorkshop.WebApi_HostAddress = http://localhost:5182
+
+GET {{CaWorkshop.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
